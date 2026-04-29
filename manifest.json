@@ -1,0 +1,22 @@
+{
+  "name": "Campus Conecta - CBTIS",
+  "short_name": "CampusConecta",
+  "description": "Sistema de Control Escolar CBTIS",
+  "start_url": "/control_escolar/index.html",
+  "display": "standalone",
+  "background_color": "#f8f0f1",
+  "theme_color": "#4a0e14",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192x192/4a0e14/ffffff?text=CC",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/512x512/4a0e14/ffffff?text=CC",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

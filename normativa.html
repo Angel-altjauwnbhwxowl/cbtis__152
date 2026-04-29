@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normativa - CBTIS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4a0e14">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+
+<nav>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menú">
+        ☰
+    </button>
+    <div class="logo">
+        🏫 <span>Campus</span>Conecta
+    </div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">🏠 Inicio</a></li>
+        <li><a href="asistencia.html">📋 Asistencia</a></li>
+        <li><a href="recursos.html">📚 Recursos</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <header class="page-header">
+        <h1>📜 Normativa Institucional</h1>
+        <p class="text-muted">Reglamentos, lineamientos y códigos de conducta del plantel</p>
+    </header>
+
+    <div class="dashboard" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+        <div class="card">
+            <h3>📊 Documentos Oficiales</h3>
+            <p>Reglamentos y normativas vigentes del plantel.</p>
+            <div class="value" style="font-size: 3.5rem; color: var(--primary-700);">12</div>
+            <small class="text-muted">Documentos disponibles</small>
+            <div class="mt-3" style="padding: 1rem; background: var(--primary-50); border-radius: var(--radius);">
+                <strong>📅 Actualización:</strong><br>
+                <small style="color: var(--gray-600);">Ciclo Escolar 2026-2027<br>Publicación: 15/Junio/2026</small>
+            </div>
+            <div class="mt-2" style="display: flex; gap: 0.5rem;">
+                <button class="btn btn-primary" style="flex: 1;">📥 Descargar Todo</button>
+                <button class="btn btn-secondary" style="flex: 1;">🔍 Buscar</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>⚖️ Reglamento Escolar</h3>
+            <p>Derechos, obligaciones y procedimientos disciplinarios.</p>
+            <div style="margin-top: 1rem;">
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-500); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Capítulo I: Derechos y Obligaciones</strong><br>
+                    <small style="color: var(--gray-600);">Artículo 1-15 | Estudiantes, profesores y personal</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-400); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Capítulo II: Asistencia y Puntualidad</strong><br>
+                    <small style="color: var(--gray-600);">Artículo 16-30 | Faltas, justificaciones, retardos</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-500); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Capítulo III: Conducta y Disciplina</strong><br>
+                    <small style="color: var(--gray-600);">Artículo 31-50 | Vestimenta, uso de instalaciones</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-600); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Capítulo IV: Procedimientos Disciplinarios</strong><br>
+                    <small style="color: var(--gray-600);">Artículo 51-70 | Amonestaciones, suspensiones</small>
+                </div>
+            </div>
+            <a href="#reglamento" class="btn btn-primary mt-2" style="width: 100%;">📖 Ver Completo</a>
+        </div>
+
+        <div class="card">
+            <h3>🏫 Código de Conducta</h3>
+            <p>Valores éticos y comportamiento esperado en la comunidad.</p>
+            <div style="margin-top: 1rem;">
+                <div style="padding: 1rem; background: var(--gray-50); border-radius: var(--radius); margin-bottom: 0.75rem; border-left: 4px solid var(--primary-500);">
+                    <strong>🙋‍♂️ Respeto Mutuo</strong><br>
+                    <small style="color: var(--gray-600);">Trato cordial entre todos los miembros de la comunidad educativa</small>
+                </div>
+                <div style="padding: 1rem; background: var(--gray-50); border-radius: var(--radius); margin-bottom: 0.75rem; border-left: 4px solid var(--primary-400);">
+                    <strong>📚 Honestidad Académica</strong><br>
+                    <small style="color: var(--gray-600);">Cero tolerancia al plagio, copia o fraude en evaluaciones</small>
+                </div>
+                <div style="padding: 1rem; background: var(--gray-50); border-radius: var(--radius); margin-bottom: 0.75rem; border-left: 4px solid var(--primary-500);">
+                    <strong>🔒 Cuidado de Instalaciones</strong><br>
+                    <small style="color: var(--gray-600);">Mantener limpio y en buen estado el plantel y equipo</small>
+                </div>
+                <div style="padding: 1rem; background: var(--gray-50); border-radius: var(--radius); border-left: 4px solid var(--primary-600);">
+                    <strong>🤝 Respeto a la Diversidad</strong><br>
+                    <small style="color: var(--gray-600);">Cero discriminación por género, origen, religión u orientación</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>📱 Uso de Tecnología</h3>
+            <p>Políticas para dispositivos y redes escolares.</p>
+            <div style="margin-top: 1rem;">
+                <div style="padding: 0.75rem; background: var(--primary-50); border-radius: var(--radius); margin-bottom: 0.5rem;">
+                    <strong>📱 Dispositivos Personales</strong><br>
+                    <small style="color: var(--gray-600);">Permitidos solo con autorización del docente</small>
+                </div>
+                <div style="padding: 0.75rem; background: var(--primary-50); border-radius: var(--radius); margin-bottom: 0.5rem;">
+                    <strong>🌐 Red Escolar</strong><br>
+                    <small style="color: var(--gray-600);">Solo para fines educativos, monitoreada constantemente</small>
+                </div>
+                <div style="padding: 0.75rem; background: var(--primary-50); border-radius: var(--radius); margin-bottom: 0.5rem;">
+                    <strong>📧 Correo Institucional</strong><br>
+                    <small style="color: var(--gray-600);">Uso exclusivo para comunicación escolar</small>
+                </div>
+                <div style="padding: 0.75rem; background: var(--primary-50); border-radius: var(--radius); margin-bottom: 0.5rem;">
+                    <strong>🚫 Contenido Restringido</strong><br>
+                    <small style="color: var(--gray-600);">Redes sociales, juegos y streaming bloqueados</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>🏥 Seguridad y Salud</h3>
+            <p>Protocolos de emergencia y cuidado de la comunidad.</p>
+            <div style="margin-top: 1rem;">
+                <div style="padding: 0.75rem; border-left: 3px solid var(--error); background: var(--gray-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>🚨 Emergencias</strong><br>
+                    <small style="color: var(--gray-600);">Ligas, cortes de luz, sismos - Rutas de evacuación</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--success); background: var(--gray-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>💊 Botiquín</strong><br>
+                    <small style="color: var(--gray-600);">Ubicación: Oficina de Dirección, atención estudiantil</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--warning); background: var(--gray-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>🔥 Prevención</strong><br>
+                    <small style="color: var(--gray-600);">Simulacros bimestrales, extintores verificados</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--info); background: var(--gray-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>🩺 COVID-19</strong><br>
+                    <small style="color: var(--gray-600);">Protocolos actualizados, gel antibacterial disponible</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>⚖️ Procedimientos Disciplinarios</h3>
+            <p>Escalas de sanciones y derechos de audiencia.</p>
+            <div style="margin-top: 1rem;">
+                <div style="padding: 0.75rem; background: #fff3cd; border-radius: var(--radius); margin-bottom: 0.5rem; border-left: 4px solid #ffc107;">
+                    <strong>1. Amonestación Escrita</strong><br>
+                    <small style="color: #856404;">Falta leve, notificación a padres/tutores</small>
+                </div>
+                <div style="padding: 0.75rem; background: #f8d7da; border-radius: var(--radius); margin-bottom: 0.5rem; border-left: 4px solid #dc3545;">
+                    <strong>2. Suspensión (1-3 días)</strong><br>
+                    <small style="color: #721c24;">Falta grave, reunión con autoridades</small>
+                </div>
+                <div style="padding: 0.75rem; background: #f8d7da; border-radius: var(--radius); margin-bottom: 0.5rem; border-left: 4px solid #dc3545;">
+                    <strong>3. Suspensión (4-10 días)</strong><br>
+                    <small style="color: #721c24;">Falta muy grave, posible expulsión</small>
+                </div>
+                <div style="padding: 0.75rem; background: #f8d7da; border-radius: var(--radius); margin-bottom: 0.5rem; border-left: 4px solid #dc3545;">
+                    <strong>4. Expulsión</strong><br>
+                    <small style="color: #721c24;">Falta extrema, daño físico o moral grave</small>
+                </div>
+                <div style="padding: 0.75rem; background: var(--gray-50); border-radius: var(--radius); margin-top: 0.75rem;">
+                    <strong>🎓 Derechos:</strong><br>
+                    <small style="color: var(--gray-600);">Audiencia, defensa, apelación ante Consejo Técnico</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-card" style="margin-top: 2rem;">
+        <div class="table-header">
+            <h3>📄 Documentos Disponibles para Descarga</h3>
+            <p class="text-muted">Formatos oficiales y reglamentos en PDF</p>
+        </div>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Documento</th>
+                        <th>Tipo</th>
+                        <th>Versión</th>
+                        <th>Fecha</th>
+                        <th>Tamaño</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Reglamento Escolar 2026-2027</td>
+                        <td>Reglamento</td>
+                        <td><span class="badge badge-alumno" style="background: #8b4513;">Vigente</span></td>
+                        <td>15/Jun/2026</td>
+                        <td>2.4 MB</td>
+                        <td><button class="btn btn-primary btn-sm">📥 Descargar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Código de Conducta y Ética</td>
+                        <td>Normativo</td>
+                        <td><span class="badge badge-alumno" style="background: #8b4513;">Vigente</span></td>
+                        <td>01/Jun/2026</td>
+                        <td>1.1 MB</td>
+                        <td><button class="btn btn-primary btn-sm">📥 Descargar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Manual de Becas y Apoyos</td>
+                        <td>Informativo</td>
+                        <td><span class="badge badge-alumno" style="background: #8b4513;">Vigente</span></td>
+                        <td>10/May/2026</td>
+                        <td>856 KB</td>
+                        <td><button class="btn btn-primary btn-sm">📥 Descargar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Protocolo de Emergencias</td>
+                        <td>Seguridad</td>
+                        <td><span class="badge badge-alumno" style="background: #8b4513;">Vigente</span></td>
+                        <td>20/Jun/2026</td>
+                        <td>1.8 MB</td>
+                        <td><button class="btn btn-primary btn-sm">📥 Descargar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Formato de Solicitud de Baja</td>
+                        <td>Formato</td>
+                        <td><span class="badge badge-alumno" style="background: #8b4513;">Actualizado</span></td>
+                        <td>01/Jul/2026</td>
+                        <td>245 KB</td>
+                        <td><button class="btn btn-primary btn-sm">📥 Descargar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Reglamento de Laboratorios</td>
+                        <td>Reglamento</td>
+                        <td><span class="badge badge-alumno" style="background: #8b4513;">Vigente</span></td>
+                        <td>05/Jun/2026</td>
+                        <td>1.2 MB</td>
+                        <td><button class="btn btn-primary btn-sm">📥 Descargar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Sistema de Control Escolar CBTIS &copy; 2026 | Versión 1.0</p>
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salones - CBTIS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4a0e14">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+
+<nav>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menú">
+        ☰
+    </button>
+    <div class="logo">
+        🏫 <span>Campus</span>Conecta
+    </div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">🏠 Inicio</a></li>
+        <li><a href="asistencia.html">📋 Asistencia</a></li>
+        <li><a href="recursos.html">📚 Recursos</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <header class="page-header">
+        <h1>🏫 Salones y Aulas</h1>
+        <p class="text-muted">Disponibilidad y horarios de todas las aulas del plantel</p>
+    </header>
+
+    <div class="dashboard" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+        <div class="card">
+            <h3>📊 Resumen General</h3>
+            <p>Estadísticas de salones y disponibilidad.</p>
+            <div class="value" style="font-size: 3.5rem; color: var(--primary-700);">45</div>
+            <small class="text-muted">Aulas disponibles</small>
+            <div class="mt-3" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 1rem;">
+                <div style="text-align: center; padding: 0.75rem; background: var(--primary-50); border-radius: var(--radius);">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-700);">25</div>
+                    <div style="font-size: 0.8rem; color: var(--gray-600);">Salones Regulares</div>
+                </div>
+                <div style="text-align: center; padding: 0.75rem; background: var(--primary-50); border-radius: var(--radius);">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-700);">12</div>
+                    <div style="font-size: 0.8rem; color: var(--gray-600);">Laboratorios</div>
+                </div>
+                <div style="text-align: center; padding: 0.75rem; background: var(--primary-50); border-radius: var(--radius);">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-700);">6</div>
+                    <div style="font-size: 0.8rem; color: var(--gray-600);">Auditorios</div>
+                </div>
+                <div style="text-align: center; padding: 0.75rem; background: var(--primary-50); border-radius: var(--radius);">
+                    <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-700);">2</div>
+                    <div style="font-size: 0.8rem; color: var(--gray-600);">Salas Especiales</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>📍 Horarios de Uso</h3>
+            <p>Bloques horarios disponibles para cada turno.</p>
+            <div style="margin-top: 1rem;">
+                <div style="padding: 1rem; background: linear-gradient(135deg, var(--primary-500), var(--primary-600)); color: white; border-radius: var(--radius); margin-bottom: 0.75rem;">
+                    <strong>🕐 Turno Matutino</strong><br>
+                    <small>07:00 - 14:00 hrs</small>
+                </div>
+                <div style="padding: 1rem; background: linear-gradient(135deg, var(--primary-400), var(--primary-500)); color: white; border-radius: var(--radius); margin-bottom: 0.75rem;">
+                    <strong>🕐 Turno Vespertino</strong><br>
+                    <small>15:00 - 22:00 hrs</small>
+                </div>
+                <div style="padding: 1rem; background: var(--primary-100); border: 2px dashed var(--primary-300); border-radius: var(--radius);">
+                    <strong>⚠️ Periodo Extraordinario</strong><br>
+                    <small style="color: var(--primary-800);">Sábados: 08:00 - 14:00 hrs<br>(Solo exámenes extraordinarios)</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>🏢 Edificio Principal (A1-A15)</h3>
+            <p>Salones de uso general y aulas especializadas.</p>
+            <div style="margin-top: 1rem;">
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-500); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Aula A1</strong> - Capacidad: 40 alumnos<br>
+                    <small style="color: var(--gray-600);">7:00-14:00 / 15:00-22:00</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-500); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Aula A2</strong> - Capacidad: 35 alumnos<br>
+                    <small style="color: var(--gray-600);">7:00-15:00 / 16:00-21:00</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-400); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Aula A3</strong> - Capacidad: 45 alumnos<br>
+                    <small style="color: var(--gray-600);">7:00-22:00 (Inglés/Idiomas)</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-600); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Auditorio A</strong> - Capacidad: 120 personas<br>
+                    <small style="color: var(--gray-600);">8:00-20:00 (Eventos y conferencias)</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>🔬 Edificio de Ciencias (B1-B10)</h3>
+            <p>Laboratorios especializados y aulas de ciencias.</p>
+            <div style="margin-top: 1rem;">
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-500); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Lab. Física</strong> - 20 equipos<br>
+                    <small style="color: var(--gray-600);">8:00-18:00</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-400); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Lab. Química</strong> - 24 estaciones<br>
+                    <small style="color: var(--gray-600);">8:00-16:00</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-500); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Lab. Biología</strong> - 22 mesas<br>
+                    <small style="color: var(--gray-600);">7:00-15:00</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-300); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>B10</strong> - Aula Multimedia<br>
+                    <small style="color: var(--gray-600);">8:00-20:00 (Proyector HD)</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>💻 Edificio Tecnológico (C1-C8)</h3>
+            <p>Laboratorios de computación y tecnología.</p>
+            <div style="margin-top: 1rem;">
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-500); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Lab. Computación 1</strong> - 30 PC<br>
+                    <small style="color: var(--gray-600);">8:00-20:00</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-400); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Lab. Computación 2</strong> - 30 PC<br>
+                    <small style="color: var(--gray-600);">8:00-20:00</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-500); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Lab. Electrónica</strong> - 25 bancos<br>
+                    <small style="color: var(--gray-600);">7:00-18:00</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-600); background: var(--primary-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>C8</strong> - Taller Mecatrónica<br>
+                    <small style="color: var(--gray-600);">8:00-17:00</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>📋 Reglas de Uso</h3>
+            <p>Normas para el uso adecuado de las instalaciones.</p>
+            <div style="margin-top: 1rem;">
+                <div style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.9rem;">
+                    <span>❯</span>
+                    <span>Reservar con anticipación (24 hrs)</span>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.9rem;">
+                    <span>❯</span>
+                    <span>Máximo 2 horas por grupo</span>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.9rem;">
+                    <span>❯</span>
+                    <span>Dejar limpio el espacio</span>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.9rem;">
+                    <span>❯</span>
+                    <span>No comer ni beber</span>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.9rem;">
+                    <span>❯</span>
+                    <span>Cerrar puertas y ventanas</span>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.9rem;">
+                    <span>❯</span>
+                    <span>Reportar desperfectos</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-card" style="margin-top: 2rem;">
+        <div class="table-header">
+            <h3>📅 Disponibilidad del Día</h3>
+            <p class="text-muted">Estado actual de los salones principales</p>
+        </div>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Salón</th>
+                        <th>Tipo</th>
+                        <th>Capacidad</th>
+                        <th>Turno Mañana</th>
+                        <th>Turno Tarde</th>
+                        <th>Estatus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aula A1</td>
+                        <td>Regular</td>
+                        <td>40</td>
+                        <td>07:00-14:00</td>
+                        <td>15:00-22:00</td>
+                        <td><span class="badge badge-alumno" style="background: #8b4513;">Disponible</span></td>
+                    </tr>
+                    <tr>
+                        <td>Aula A2</td>
+                        <td>Regular</td>
+                        <td>35</td>
+                        <td>07:00-15:00</td>
+                        <td>16:00-21:00</td>
+                        <td><span class="badge badge-alumno" style="background: #8b4513;">Disponible</span></td>
+                    </tr>
+                    <tr>
+                        <td>Lab. Física</td>
+                        <td>Laboratorio</td>
+                        <td>20</td>
+                        <td>08:00-14:00</td>
+                        <td>14:00-18:00</td>
+                        <td><span class="badge badge-entrada">Ocupado</span></td>
+                    </tr>
+                    <tr>
+                        <td>Auditorio A</td>
+                        <td>Auditorio</td>
+                        <td>120</td>
+                        <td>08:00-13:00</td>
+                        <td>14:00-20:00</td>
+                        <td><span class="badge badge-alumno" style="background: #8b4513;">Reservado</span></td>
+                    </tr>
+                    <tr>
+                        <td>Lab. Computo 1</td>
+                        <td>Laboratorio</td>
+                        <td>30</td>
+                        <td>08:00-14:00</td>
+                        <td>15:00-20:00</td>
+                        <td><span class="badge badge-alumno" style="background: #8b4513;">Disponible</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Sistema de Control Escolar CBTIS &copy; 2026 | Versión 1.0</p>
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

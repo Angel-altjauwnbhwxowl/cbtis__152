@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario - CBTIS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4a0e14">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+
+<nav>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menú">
+        ☰
+    </button>
+    <div class="logo">
+        🏫 <span>Campus</span>Conecta
+    </div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">🏠 Inicio</a></li>
+        <li><a href="asistencia.html">📋 Asistencia</a></li>
+        <li><a href="recursos.html">📚 Recursos</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <header class="page-header">
+        <h1>📅 Calendario Académico 2026</h1>
+        <p class="text-muted">Actividades, exámenes y periodos del ciclo escolar</p>
+    </header>
+
+    <div class="dashboard" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+        <div class="card">
+            <h3>📊 Resumen del Ciclo</h3>
+            <p>Fechas clave del calendario escolar 2026.</p>
+            <div class="mt-3">
+                <div style="padding: 1rem; background: linear-gradient(135deg, var(--primary-500), var(--primary-600)); color: white; border-radius: var(--radius); margin-bottom: 0.75rem;">
+                    <strong>📅 Inicio de Clases</strong><br>
+                    <small>12 de Febrero de 2026</small>
+                </div>
+                <div style="padding: 1rem; background: linear-gradient(135deg, var(--primary-400), var(--primary-500)); color: white; border-radius: var(--radius); margin-bottom: 0.75rem;">
+                    <strong>🎉 Periodo Vacacional</strong><br>
+                    <small>1 al 12 de Abril de 2026</small>
+                </div>
+                <div style="padding: 1rem; background: linear-gradient(135deg, var(--primary-500), var(--primary-600)); color: white; border-radius: var(--radius); margin-bottom: 0.75rem;">
+                    <strong>📝 Evaluación Parcial</strong><br>
+                    <small>15 de Mayo de 2026</small>
+                </div>
+                <div style="padding: 1rem; background: linear-gradient(135deg, var(--primary-600), var(--primary-700)); color: white; border-radius: var(--radius);">
+                    <strong>🎓 Fin de Clases</strong><br>
+                    <small>18 de Julio de 2026</small>
+                </div>
+            </div>
+            <div class="mt-3" style="padding: 1rem; background: var(--primary-50); border-radius: var(--radius);">
+                <strong>📅 Días Festivos:</strong><br>
+                <small style="color: var(--gray-600);">5 de Febrero (Constitución)<br>21 de Marzo (Nacimiento Benito Juárez)<br>1 y 5 de Mayo (Día del Trabajo)<br>16 de Septiembre (Independencia)<br>20 de Noviembre (Revolución)<br>25 de Diciembre (Navidad)</small>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>📋 Calendario Mensual</h3>
+            <p>Eventos programados por mes del ciclo escolar.</p>
+            <div style="margin-top: 1rem;">
+                <div style="padding: 0.75rem; background: var(--primary-50); border-radius: var(--radius); margin-bottom: 0.5rem; border-left: 4px solid var(--primary-500);">
+                    <strong>🗓️ Febrero</strong><br>
+                    <small style="color: var(--gray-600);">12 - Inicio de Ciclo Escolar<br>13-28 - Periodo de Adaptación</small>
+                </div>
+                <div style="padding: 0.75rem; background: var(--primary-50); border-radius: var(--radius); margin-bottom: 0.5rem; border-left: 4px solid var(--primary-400);">
+                    <strong>🗓️ Marzo</strong><br>
+                    <small style="color: var(--gray-600);">Clases regulares<br>21 - Descanso por Natalicio de Benito Juárez</small>
+                </div>
+                <div style="padding: 0.75rem; background: var(--primary-50); border-radius: var(--radius); margin-bottom: 0.5rem; border-left: 4px solid var(--primary-500);">
+                    <strong>🗓️ Abril</strong><br>
+                    <small style="color: var(--gray-600);">1-12 - Vacaciones de Semana Santa<br>13 - Regreso a clases</small>
+                </div>
+                <div style="padding: 0.75rem; background: var(--primary-50); border-radius: var(--radius); margin-bottom: 0.5rem; border-left: 4px solid var(--primary-400);">
+                    <strong>🗓️ Mayo</strong><br>
+                    <small style="color: var(--gray-600);">1 - Día del Trabajo (Descanso)<br>15 - Evaluación Parcial<br>10 - Día de las Madres (Evento)</small>
+                </div>
+                <div style="padding: 0.75rem; background: var(--primary-50); border-radius: var(--radius); margin-bottom: 0.5rem; border-left: 4px solid var(--primary-500);">
+                    <strong>🗓️ Junio</strong><br>
+                    <small style="color: var(--gray-600);">Clases regulares<br>20 - Día del Padre (Evento)<br>14-28 - Periodo de Exámenes Finales</small>
+                </div>
+                <div style="padding: 0.75rem; background: var(--primary-50); border-radius: var(--radius); border-left: 4px solid var(--primary-600);">
+                    <strong>🗓️ Julio</strong><br>
+                    <small style="color: var(--gray-600);">1-14 - Periodo de Regularización<br>18 - Clausura del Ciclo Escolar<br>19+ - Vacaciones de Verano</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>📝 Eventos Importantes</h3>
+            <p>Actividades extracurriculares y ceremonias programadas.</p>
+            <div style="margin-top: 1rem;">
+                <div style="padding: 1rem; background: var(--gray-50); border-radius: var(--radius); margin-bottom: 0.75rem;">
+                    <strong style="color: var(--primary-700);">📅 15 de Febrero</strong><br>
+                    <small style="color: var(--gray-600);">Ceremonia de Inauguración del Ciclo Escolar<br><strong>Lugar:</strong> Auditorio Principal | <strong>Hora:</strong> 9:00 AM</small>
+                </div>
+                <div style="padding: 1rem; background: var(--gray-50); border-radius: var(--radius); margin-bottom: 0.75rem;">
+                    <strong style="color: var(--primary-700);">📅 28 de Marzo</strong><br>
+                    <small style="color: var(--gray-600);">Torneo Deportivo Intersemestral<br><strong>Lugar:</strong> Canchas Deportivas | <strong>Hora:</strong> 8:00 AM</small>
+                </div>
+                <div style="padding: 1rem; background: var(--gray-50); border-radius: var(--radius); margin-bottom: 0.75rem;">
+                    <strong style="color: var(--primary-700);">📅 10 de Mayo</strong><br>
+                    <small style="color: var(--gray-600);">Festival del Día de las Madres<br><strong>Lugar:</strong> Patio Central | <strong>Hora:</strong> 15:00 PM</small>
+                </div>
+                <div style="padding: 1rem; background: var(--gray-50); border-radius: var(--radius); margin-bottom: 0.75rem;">
+                    <strong style="color: var(--primary-700);">📅 20 de Junio</strong><br>
+                    <small style="color: var(--gray-600);">Ceremonia del Día del Padre<br><strong>Lugar:</strong> Auditorio Principal | <strong>Hora:</strong> 10:00 AM</small>
+                </div>
+                <div style="padding: 1rem; background: var(--gray-50); border-radius: var(--radius); margin-bottom: 0.75rem;">
+                    <strong style="color: var(--primary-700);">📅 28 de Junio</strong><br>
+                    <small style="color: var(--gray-600);">Exámenes Finales - Semana 1<br><strong>Lugar:</strong> Todas las aulas | <strong>Hora:</strong> 8:00 AM</small>
+                </div>
+                <div style="padding: 1rem; background: var(--gray-50); border-radius: var(--radius); margin-bottom: 0.75rem;">
+                    <strong style="color: var(--primary-700);">📅 5 de Julio</strong><br>
+                    <small style="color: var(--gray-600);">Exámenes Finales - Semana 2<br><strong>Lugar:</strong> Todas las aulas | <strong>Hora:</strong> 8:00 AM</small>
+                </div>
+                <div style="padding: 1rem; background: var(--gray-50); border-radius: var(--radius); border-left: 4px solid var(--primary-500);">
+                    <strong style="color: var(--primary-700);">📅 18 de Julio</strong><br>
+                    <small style="color: var(--gray-600);">Ceremonia de Clausura y Entrega de Certificados<br><strong>Lugar:</strong> Auditorio Principal | <strong>Hora:</strong> 16:00 PM</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>⚠️ Fechas Límite Importantes</h3>
+            <p>Plazos para trámites y pagos escolares.</p>
+            <div style="margin-top: 1rem;">
+                <div style="padding: 0.75rem; background: #fff3cd; border-radius: var(--radius); margin-bottom: 0.5rem;">
+                    <strong>💰 Pago de Inscripción</strong><br>
+                    <small style="color: #856404;">Fecha límite: 31 de Enero 2026</small>
+                </div>
+                <div style="padding: 0.75rem; background: #fff3cd; border-radius: var(--radius); margin-bottom: 0.5rem;">
+                    <strong>💰 Pago de Reinscripción</strong><br>
+                    <small style="color: #856404;">Fecha límite: 15 de Junio 2026</small>
+                </div>
+                <div style="padding: 0.75rem; background: #fff3cd; border-radius: var(--radius); margin-bottom: 0.5rem;">
+                    <strong>📄 Solicitud de Baja Temporal</strong><br>
+                    <small style="color: #856404;">Fecha límite: 30 de Abril 2026</small>
+                </div>
+                <div style="padding: 0.75rem; background: #d1ecf1; border-radius: var(--radius); margin-bottom: 0.5rem;">
+                    <strong>📊 Pre-registro a Exámenes Extraordinarios</strong><br>
+                    <small style="color: #0c5460;">Fecha límite: 28 de Marzo 2026</small>
+                </div>
+                <div style="padding: 0.75rem; background: #d1ecf1; border-radius: var(--radius); margin-bottom: 0.5rem;">
+                    <strong>📄 Cambio de Grupo / Materia</strong><br>
+                    <small style="color: #0c5460;">Fecha límite: 31 de Marzo 2026</small>
+                </div>
+                <div style="padding: 0.75rem; background: #d1ecf1; border-radius: var(--radius); margin-bottom: 0.5rem;">
+                    <strong>🎓 Tramite de Certificado Parcial</strong><br>
+                    <small style="color: #0c5460;">Fecha límite: 10 de Julio 2026</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-card" style="margin-top: 2rem;">
+        <div class="table-header">
+            <h3>📅 Próximos 30 Días - Eventos Pendientes</h3>
+            <p class="text-muted">Actividades próximas en el calendario escolar</p>
+        </div>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Evento</th>
+                        <th>Tipo</th>
+                        <th>Lugar</th>
+                        <th>Responsable</th>
+                        <th>Estatus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2026-04-29</td>
+                        <td>Evaluación Parcial - Física</td>
+                        <td>Examen</td>
+                        <td>Lab. Física</td>
+                        <td>Mtra. Patricia Ruiz</td>
+                        <td><span class="badge badge-alumno" style="background: #8b4513;">Programado</span></td>
+                    </tr>
+                    <tr>
+                        <td>2026-04-30</td>
+                        <td>Taller de Programación Web</td>
+                        <td>Taller</td>
+                        <td>Lab. Comp. 1</td>
+                        <td>Ing. Carlos Domínguez</td>
+                        <td><span class="badge badge-alumno" style="background: #8b4513;">Confirmado</span></td>
+                    </tr>
+                    <tr>
+                        <td>2026-05-01</td>
+                        <td>Reunión de Padres de Familia</td>
+                        <td>Reunión</td>
+                        <td>Auditorio A</td>
+                        <td>Dirección</td>
+                        <td><span class="badge badge-alumno" style="background: #8b4513;">Confirmado</span></td>
+                    </tr>
+                    <tr>
+                        <td>2026-05-05</td>
+                        <td>Descanso - Día del Trabajo</td>
+                        <td>Feriado</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><span class="badge badge-salida">Inactivo</span></td>
+                    </tr>
+                    <tr>
+                        <td>2026-05-10</td>
+                        <td>Festival del Día de las Madres</td>
+                        <td>Evento Cultural</td>
+                        <td>Patio Central</td>
+                        <td>Difusión Cultural</td>
+                        <td><span class="badge badge-alumno" style="background: #8b4513;">En Preparación</span></td>
+                    </tr>
+                    <tr>
+                        <td>2026-05-15</td>
+                        <td>Exámenes de Evaluación Parcial</td>
+                        <td>Examen</td>
+                        <td>Todas las Aulas</td>
+                        <td>Academia</td>
+                        <td><span class="badge badge-alumno" style="background: #8b4513;">Pendiente</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Sistema de Control Escolar CBTIS &copy; 2026 | Versión 1.0</p>
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

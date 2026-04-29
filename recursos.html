@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos - CBTIS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0f2d5a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+
+<nav>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menú">
+        ☰
+    </button>
+    <div class="logo">
+        🏫 <span>Campus</span>Conecta
+    </div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">🏠 Inicio</a></li>
+        <li><a href="asistencia.html">📋 Asistencia</a></li>
+        <li class="dropdown">
+            <a href="recursos.html" class="active">📚 Recursos</a>
+            <div class="dropdown-content">
+                <a href="biblioteca.html">📖 Biblioteca</a>
+                <a href="salones.html">🏫 Salones</a>
+                <a href="tutorias.html">👨‍🏫 Tutorías</a>
+                <a href="laboratorios.html">💻 Laboratorios</a>
+                <a href="normativa.html">🎓 Normativa</a>
+                <a href="calendario.html">📅 Calendario</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<main class="container">
+    <header class="page-header">
+        <h1>📚 Recursos del Plantel</h1>
+        <p class="text-muted">Acceso a servicios e instalaciones CBTIS</p>
+    </header>
+
+    <div class="dashboard" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <div class="card">
+            <h3>📖 Biblioteca</h3>
+            <p>Consulta de libros, hemeroteca y materiales digitales. Horario: 7:00 - 20:00 hrs.</p>
+            <div class="value mt-2">300</div>
+            <small>Libros disponibles</small>
+            <div class="mt-2" style="font-size: 0.85rem; color: var(--gray-600);">
+                <strong>Libros destacados:</strong><br>
+                • Matemáticas Avanzadas (7:00-20:00)<br>
+                • Historia de México (7:00-20:00)<br>
+                • Física General (7:00-20:00)<br>
+                • Programación Web (7:00-20:00)<br>
+                • Literatura Universal (7:00-20:00)
+            </div>
+            <a href="#" class="btn btn-primary mt-2">Acceder</a>
+        </div>
+
+        <div class="card">
+            <h3>🏫 Salones</h3>
+            <p>Disponibilidad de aulas y laboratorios. Consulta horarios y reservaciones.</p>
+            <div class="value mt-2">45</div>
+            <small>Aulas disponibles</small>
+            <div class="mt-2" style="font-size: 0.85rem; color: var(--gray-600);">
+                <strong>Horarios:</strong><br>
+                • Salón A1: 7:00-14:00 / 15:00-22:00<br>
+                • Salón A2: 7:00-15:00 / 16:00-21:00<br>
+                • Laboratorio Física: 8:00-18:00<br>
+                • Aula Magna: 8:00-20:00
+            </div>
+            <a href="#" class="btn btn-primary mt-2">Ver horarios</a>
+        </div>
+
+        <div class="card">
+            <h3>👨‍🏫 Tutorías</h3>
+            <p>Apoyo académico personalizado con docentes especializados.</p>
+            <div class="value mt-2">12</div>
+            <small>Tutores activos</small>
+            <div class="mt-2" style="font-size: 0.85rem; color: var(--gray-600);">
+                <strong>Horarios:</strong><br>
+                • Matemáticas: L-Mi 14:00-18:00<br>
+                • Ciencias: Mar-J 10:00-14:00<br>
+                • Humanidades: L-V 16:00-19:00<br>
+                • Inglés: L-J 14:00-17:00
+            </div>
+            <a href="#" class="btn btn-primary mt-2">Agendar cita</a>
+        </div>
+
+        <div class="card">
+            <h3>💻 Laboratorios</h3>
+            <p>Laboratorios de cómputo, electrónica, química y más.</p>
+            <div class="value mt-2">8</div>
+            <small>Laboratorios</small>
+            <div class="mt-2" style="font-size: 0.85rem; color: var(--gray-600);">
+                <strong>Horarios:</strong><br>
+                • Computo: 8:00-20:00<br>
+                • Electrónica: 7:00-18:00<br>
+                • Química: 8:00-16:00<br>
+                • Biología: 7:00-15:00
+            </div>
+            <a href="#" class="btn btn-primary mt-2">Reservar</a>
+        </div>
+
+        <div class="card">
+            <h3>🎓 Normativa</h3>
+            <p>Reglamento interno, códigos de conducta y lineamientos académicos.</p>
+            <div class="mt-2" style="font-size: 0.85rem; color: var(--gray-600);">
+                <strong>Documentos disponibles:</strong><br>
+                • Reglamento Escolar 2026<br>
+                • Código de Conducta<br>
+                • Manual de Instalaciones<br>
+                • Protocolos de Seguridad
+            </div>
+            <a href="#" class="btn btn-secondary mt-2">Ver documentos</a>
+        </div>
+
+        <div class="card">
+            <h3>📅 Calendario</h3>
+            <p>Calendario oficial de actividades, exámenes y periodos vacacionales.</p>
+            <div class="mt-2" style="font-size: 0.85rem; color: var(--gray-600);">
+                <strong>2026:</strong><br>
+                • Inicio de clases: 12/Feb<br>
+                • Periodo Vacacional: 1/Abr - 12/Abr<br>
+                • Evaluación Parcial: 15/May<br>
+                • Fin de clases: 18/Jul
+            </div>
+            <a href="#" class="btn btn-secondary mt-2">Descargar</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Sistema de Control Escolar CBTIS &copy; 2026 | Versión 1.0</p>
+</footer>
+
+</body>
+</html>

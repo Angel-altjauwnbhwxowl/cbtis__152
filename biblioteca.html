@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - CBTIS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#4a0e14">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+
+<nav>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Menú">
+        ☰
+    </button>
+    <div class="logo">
+        🏫 <span>Campus</span>Conecta
+    </div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">🏠 Inicio</a></li>
+        <li><a href="asistencia.html">📋 Asistencia</a></li>
+        <li><a href="recursos.html">📚 Recursos</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+    <header class="page-header">
+        <h1>📖 Biblioteca CBTIS</h1>
+        <p class="text-muted">Consulta nuestro catálogo de libros y horarios de servicio</p>
+    </header>
+
+    <div class="dashboard" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+        <div class="card">
+            <h3>📊 Inventario General</h3>
+            <p>Total de libros disponibles en todas las áreas académicas.</p>
+            <div class="value" style="font-size: 3.5rem; color: var(--primary-700);">300</div>
+            <small class="text-muted">Libros físicos y digitales</small>
+            <div class="mt-3" style="padding: 1rem; background: var(--primary-50); border-radius: var(--radius);">
+                <strong>Horario de Atención:</strong><br>
+                🕐 Lunes a Viernes: 7:00 - 20:00 hrs<br>
+                🕐 Sábados: 8:00 - 14:00 hrs<br>
+                📍 Ubicación: Edificio Principal, Piso 1
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>📚 Libros Destacados</h3>
+            <p>Obras esenciales disponibles para consulta y préstamo.</p>
+            <div style="margin-top: 1rem;">
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-500); background: var(--gray-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Matemáticas Avanzadas</strong><br>
+                    <small style="color: var(--gray-600);">Autor: Dr. Ricardo Mendoza | Año: 2024</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-400); background: var(--gray-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Historia de México</strong><br>
+                    <small style="color: var(--gray-600);">Autor: Mtra. Elena Torres | Año: 2023</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-500); background: var(--gray-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Física General</strong><br>
+                    <small style="color: var(--gray-600);">Autor: Ing. Carlos Domínguez | Año: 2024</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-300); background: var(--gray-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Programación Web Moderna</strong><br>
+                    <small style="color: var(--gray-600);">Autor: Lic. Ana Gómez | Año: 2025</small>
+                </div>
+                <div style="padding: 0.75rem; border-left: 3px solid var(--primary-600); background: var(--gray-50); margin-bottom: 0.5rem; border-radius: 0 var(--radius) var(--radius) 0;">
+                    <strong>Literatura Universal</strong><br>
+                    <small style="color: var(--gray-600);">Autor: Dr. Miguel Hernández | Año: 2023</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>📖 Categorías</h3>
+            <p>Distribución de libros por área de conocimiento.</p>
+            <div style="margin-top: 1rem;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span>Ciencias Exactas (Matemáticas, Física)</span>
+                    <span style="font-weight: 600; color: var(--primary-700);">85 libros</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span>Ciencias Sociales (Historia, Geografía)</span>
+                    <span style="font-weight: 600; color: var(--primary-700);">70 libros</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span>Tecnología y Programación</span>
+                    <span style="font-weight: 600; color: var(--primary-700);">65 libros</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span>Humanidades y Arte</span>
+                    <span style="font-weight: 600; color: var(--primary-700);">45 libros</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span>Idiomas y Literatura</span>
+                    <span style="font-weight: 600; color: var(--primary-700);">35 libros</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>🔍 Servicios Disponibles</h3>
+            <p>Recursos y servicios para estudiantes y profesores.</p>
+            <div style="margin-top: 1rem;">
+                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: var(--gray-50); border-radius: var(--radius);">
+                    <span style="font-size: 1.2rem;">📖</span>
+                    <div>
+                        <strong>Préstamo de Libros</strong><br>
+                        <small>Hasta 2 libros por 7 días</small>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: var(--gray-50); border-radius: var(--radius);">
+                    <span style="font-size: 1.2rem;">💻</span>
+                    <div>
+                        <strong>Computadoras con Internet</strong><br>
+                        <small>10 terminales disponibles</small>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: var(--gray-50); border-radius: var(--radius);">
+                    <span style="font-size: 1.2rem;">🖨️</span>
+                    <div>
+                        <strong>Impresión y Copiado</strong><br>
+                        <small>Servicio de $2 por hoja</small>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; padding: 0.75rem; background: var(--gray-50); border-radius: var(--radius);">
+                    <span style="font-size: 1.2rem;">📚</span>
+                    <div>
+                        <strong>Sala de Lectura</strong><br>
+                        <small>Espacio silencioso de estudio</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-card" style="margin-top: 2rem;">
+        <div class="table-header">
+            <h3>📋 Nuevas Adquisiciones</h3>
+            <p class="text-muted">Últimos libros agregados a la biblioteca</p>
+        </div>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Categoría</th>
+                        <th>Año</th>
+                        <th>Estatus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Programación Web Moderna</td>
+                        <td>Lic. Ana Gómez</td>
+                        <td>Tecnología</td>
+                        <td>2025</td>
+                        <td><span class="badge badge-success" style="background: #8b4513;">Disponible</span></td>
+                    </tr>
+                    <tr>
+                        <td>Inteligencia Artificial Básica</td>
+                        <td>Dr. Luis Ramírez</td>
+                        <td>Computación</td>
+                        <td>2025</td>
+                        <td><span class="badge badge-success" style="background: #8b4513;">Disponible</span></td>
+                    </tr>
+                    <tr>
+                        <td>Química Orgánica Avanzada</td>
+                        <td>Mtra. Patricia Ruiz</td>
+                        <td>Ciencias</td>
+                        <td>2024</td>
+                        <td><span class="badge badge-secondary">En préstamo</span></td>
+                    </tr>
+                    <tr>
+                        <td>Economía para Jóvenes</td>
+                        <td>Lic. Roberto Silva</td>
+                        <td>Ciencias Sociales</td>
+                        <td>2024</td>
+                        <td><span class="badge badge-success" style="background: #8b4513;">Disponible</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Sistema de Control Escolar CBTIS &copy; 2026 | Versión 1.0</p>
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
